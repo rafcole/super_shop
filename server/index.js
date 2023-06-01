@@ -20,6 +20,11 @@ mongoose
 
 mongoose.Promise = global.Promise;
 
+// app.use((req, res, next) => {
+//   console.log(req)
+//   next();
+// });
+
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "*");
@@ -39,6 +44,8 @@ app.use("/ui", uiRoutes);
 
 app.use((err, req, res, next) => {
   console.log(err);
+  console.log('maybe not an err?')
+  console.log("reqpath", req.path)
   next();
 });
 

@@ -24,11 +24,11 @@ let data = [
     quantity: 12,
     price: 13.74
   }
-]
+];
 // WARNING THIS IS PRODUCTION DATA INSERTION WITH VS CODE EXT
-// use('shopping_cart') 
+// use("shopping_cart");
 
 // this is for the vscode generated playgrounds
-use('mongodbVSCodePlaygroundDB');
+// use('mongodbVSCodePlaygroundDB');
 
-db.getCollection('cartitems').insertMany(data)
+// db.getCollection("products").insertMany(data);

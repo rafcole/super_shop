@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const path = require("path");
 
+console.log("path within ui.js", path.join(__dirname))
+
 router.get("/", (req, res, next) => {
   console.log("in ui");
   res.sendFile(path.join(__dirname, "../assets/ui/index.html"));

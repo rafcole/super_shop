@@ -1,5 +1,4 @@
 <!-- TOC -->
-
 - [1. API Documentation](#1-api-documentation)
   - [1.1. GET /api/products](#11-get-apiproducts)
     - [1.1.1. Expected parameters](#111-expected-parameters)

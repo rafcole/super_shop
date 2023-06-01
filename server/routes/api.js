@@ -5,7 +5,10 @@ const CartItem = require("../models/cartItem");
 
 router.get("/products", (req, res, next) => {
   Product.find({})
-    .then((products) => res.json(products))
+    .then((products) => {
+      console.log("inside api products", { products });
+      res.json(products);
+    })
     .catch(next);
 });
 
