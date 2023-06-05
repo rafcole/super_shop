@@ -1,6 +1,16 @@
 import React from "react";
 
 const AddForm = ({ onSubmitNewProduct }) => {
+  const [productName, setProductName] = useState("");
+  const [productPrice, setProductPrice] = useState("");
+  const [productQty, setProductQty] = useState("");
+
+  const reset = () => {
+    setProductName("");
+    setProductPrice("");
+    setProductQty("");
+  };
+
   return (
     <div className="add-form visible">
       <p>
